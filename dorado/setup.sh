@@ -762,7 +762,7 @@ restart="Restart=on-failure
 RestartPreventExitStatus=23"
 wanted_by="WantedBy=multi-user.target"
 after="After=network.target nss-lookup.target"
-documentation="Documentation=https://t.me/carntech"
+documentation="Documentation=https://t.me/gerhanatunnell"
 create_service() {
 local name=$1
 local description=$2
@@ -804,8 +804,8 @@ sudo systemctl daemon-reload
 /etc/init.d/dropbear restart
 cat >/etc/systemd/system/ws.service <<EOF
 [Unit]
-Description=Python Proxy carntechTunnel
-Documentation=https://t.me/carntech
+Description=Python Proxy ThefatkayTunnel
+Documentation=https://t.me/fatkay
 ${after}
 [Service]
 Type=simple
@@ -838,7 +838,7 @@ EOF
 cat >/etc/systemd/system/limitip.service <<EOF
 [Unit]
 Description=Limit IP Usage Xray Service
-Documentation=https://t.me/carntech
+Documentation=https://t.me/gerhanatunnel
 After=syslog.target network-online.target
 [Service]
 User=root
@@ -851,7 +851,7 @@ EOF
 cat >/etc/systemd/system/limitquota.service <<EOF
 [Unit]
 Description=Limit Quota Usage Xray Service
-Documentation=https://t.me/carntech
+Documentation=https://t.me/gerhanatunnel
 After=syslog.target network-online.target
 [Service]
 User=root
@@ -864,7 +864,7 @@ EOF
 cat >/etc/systemd/system/badvpn.service <<EOF
 [Unit]
 Description=BadVPN UDP Service
-Documentation=https://t.me/carntech
+Documentation=https://t.me/gerhanatunnel
 After=syslog.target network-online.target
 [Service]
 User=root
